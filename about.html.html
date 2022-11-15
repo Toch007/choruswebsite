@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>The Chorus Website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="chorus-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <img src="images/choruss.png" class="main-logo">
+            <div class="nav-list" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#concerts">EVENTS</a></li>
+                    <li><a href="#music-store">MUSIC STORE</a></li>
+                    <li><a href="#donate">DONATE</a></li>
+                    <li><a href="#members">MEMBERS</a></li>
+                    <li><a href="#gallery">GALLERY</a>
+                    <li><a href="#more">MORE</a></li>
+                    <li><a href="#contact">CONTACT</a>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>About Us</h1>
+    </section>
+
+    <section class="about">
+        <div class="row">
+            <div class="column">
+                <h3>The Chorus is</h3>
+                <p>A non-denominational, multi-talented 
+                    group of musicians, both vocalists and instrumentalist, 
+                    in the city of Abuja, Nigeria who have come together to 
+                    raise the bar as long as music is concerned. The chorus 
+                    is set to take music to a whole new dimension in Nigeria 
+                    and to partner with other music chorals at home and abroad 
+                    improve music as seen in these parts of the world.</p>
+            </div>
+            <div class="column">
+                <h3>Our Mission</h3>
+                <p>A non-denominational, multi-talented 
+                    group of musicians, both vocalists and instrumentalist, 
+                    in the city of Abuja, Nigeria who have come together to 
+                    raise the bar as long as music is concerned. The chorus 
+                    is set to take music to a whole new dimension in Nigeria 
+                    and to partner with other music chorals at home and abroad 
+                    improve music as seen in these parts of the world.</p>
+            </div>
+            <div class="column">
+                <h3>Our Vision</h3>
+                <p>A non-denominational, multi-talented 
+                    group of musicians, both vocalists and instrumentalist, 
+                    in the city of Abuja, Nigeria who have come together to 
+                    raise the bar as long as music is concerned. The chorus 
+                    is set to take music to a whole new dimension in Nigeria 
+                    and to partner with other music chorals at home and abroad 
+                    improve music as seen in these parts of the world.</p>
+            </div>
+        </div>
+        
+    </section>
+
+    <section class="footer">
+        <h4><a href="#">About Us</a></h4>
+        <p>Follow us on our social media handles</p>
+        <div class="icons">
+            <a href=""><i class="fa fa-facebook"></i></a>
+            <a href=""><i class="fa fa-instagram"></i></a>
+            <a href=""><i class="fa fa-youtube"></i></a>
+            <a href=""><i class="fa fa-twitter"></i></a>
+        </div>
+        <p>© 2022 The Chorus. All rights reserved.</p>
+    </section>
+
+
+
+    <!------JavaScript for Toggle Menu------>
+    <script>
+
+        var navLinks = document.getElementById("navLinks")
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+</body>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>The Chorus Website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="chorus-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <img src="images/choruss.png" class="main-logo">
+            <div class="nav-list" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#concerts">EVENTS</a></li>
+                    <li><a href="#music-store">MUSIC STORE</a></li>
+                    <li><a href="#donate">DONATE</a></li>
+                    <li><a href="#members">MEMBERS</a></li>
+                    <li><a href="#gallery">GALLERY</a>
+                    <li><a href="#more">MORE</a></li>
+                    <li><a href="#contact">CONTACT</a>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>GALLERY</h1>
+    </section>
+
+    <section class="gallery">
+      <h1>View more on our <a href="">Instagram</a> page</h1>
+      <div class="gallery-display">
+        <a target="_blank" href="images/gallery 1.jpg">
+            <img src="images/gallery 1.jpg" alt="the chorus pic 1">
+        </a>
+        <a target="_blank" href="images/gallery 2.jpeg">
+            <img src="images/gallery 2.jpeg" alt="the chorus pic 2">
+        </a>
+        <a target="_blank" href="images/gallery 3.jpeg">
+            <img src="images/gallery 3.jpg" alt="the chorus pic 3">
+        </a>
+        <a target="_blank" href="images/gallery 4.jpg">
+            <img src="images/gallery 4.jpeg" alt="the chorus pic 4">
+        </a> 
+        <a target="_blank" href="images/gallery 5.jpeg">
+            <img src="images/gallery 5.jpeg" alt="the chorus pic 5">
+        </a>
+        <a target="_blank" href="">
+            <img src="images/gallery 6.jpeg" alt="the chorus pic 6">
+        </a>
+        <a target="_blank" href="images/gallery 7.jpg">
+            <img src="images/gallery 7.jpeg" alt="the chorus pic 7">
+        </a>
+        <a target="_blank" href="images/gallery 8.jpg">
+            <img src="images/gallery 8.jpeg" alt="the chorus pic 8">
+        </a>
+        <a target="_blank" href="images/gallery 9.jpg">
+            <img src="images/gallery 9.jpeg" alt="the chorus pic 9">
+        </a>
+        <a target="_blank" href="images/gallery 10.jpeg">
+            <img src="images/gallery 10.jpeg" alt="the chorus pic 10">
+        </a>
+      </div>
+        
+    </section>
+
+    <section class="footer">
+        <h4><a href="#">About Us</a></h4>
+        <p>Follow us on our social media handles</p>
+        <div class="icons">
+            <a href=""><i class="fa fa-facebook"></i></a>
+            <a href=""><i class="fa fa-instagram"></i></a>
+            <a href=""><i class="fa fa-youtube"></i></a>
+            <a href=""><i class="fa fa-twitter"></i></a>
+        </div>
+        <p>© 2022 The Chorus. All rights reserved.</p>
+    </section>
+
+
+
+    <!------JavaScript for Toggle Menu------>
+    <script>
+
+        var navLinks = document.getElementById("navLinks")
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+</body>
